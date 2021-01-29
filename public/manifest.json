@@ -1,0 +1,11 @@
+{
+  "name": "Starwars",
+  "short_name": "Starwars",
+  "description": "Starwars",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
+  "splash_pages": null
+}

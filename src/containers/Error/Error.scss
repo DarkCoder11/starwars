@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+
+  h1 {
+    font-size: 220px;
+    color: $accent-900;
+    margin-top: -100px;
+  }
+
+  button {
+    @extend %buy-btn;
+
+    a {
+      color: $text-100;
+    }
+  }
+}

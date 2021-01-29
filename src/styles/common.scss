@@ -1,0 +1,19 @@
+:global {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    @include breakpoint(wide-l) {
+      max-width: 100%;
+      margin: 0 40px;
+    }
+
+    @include breakpoint(desktop) {
+      margin: 0 24px;
+    }
+
+    @include breakpoint(tablet) {
+      margin: 0 16px;
+    }
+  }
+}

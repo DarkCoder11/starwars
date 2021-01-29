@@ -1,0 +1,65 @@
+.container {
+  max-width: 512px;
+  width: 100%;
+  padding: 40px;
+  background: $bg-300;
+  border-radius: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include breakpoint(wide) {
+    max-width: 424px;
+  }
+
+  @include breakpoint(tablet-m) {
+    max-width: 333px;
+    padding: 24px;
+  }
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 394px;
+
+  @include breakpoint(tablet-m) {
+    height: 255px;
+  }
+}
+
+.name {
+  padding: 33px 0 16px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  color: $text-900;
+
+  @include breakpoint(tablet-m) {
+    font-size: 28px;
+    line-height: 37px;
+    padding: 32px 0 12px;
+  }
+}
+
+.description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: $text-800;
+  padding-bottom: 24px;
+
+  @include breakpoint(tablet-m) {
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 16px;
+    max-width: 253px;
+  }
+}
+
+.buy {
+  max-width: 196px;
+  width: 100%;
+  @extend %buy-btn;
+}

@@ -1,0 +1,62 @@
+.container {
+  max-width: 597px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: $bg-100;
+  border: 2px solid $border-100;
+  box-sizing: border-box;
+  border-radius: 72px;
+  padding: 6px;
+
+  @include breakpoint(tablet-m) {
+    flex-direction: column;
+    background: unset;
+    border: unset;
+    padding: unset;
+  }
+
+  input {
+    width: calc(100% - 239px);
+    background: transparent;
+    border: none;
+    padding: 0 14px 0 26px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+
+    @include breakpoint(wide) {
+      width: calc(100% - 180px);
+    }
+
+    @include breakpoint(tablet-m) {
+      width: 100%;
+      background: $bg-100;
+      border: 2px solid $border-100;
+      box-sizing: border-box;
+      border-radius: 72px;
+      padding: 8px;
+      padding-left: 16px;
+      margin-bottom: 24px;
+    }
+
+    &::placeholder {
+      color: $accent-900;
+    }
+  }
+
+  button {
+    @extend %buy-btn;
+
+    @include breakpoint(wide) {
+      padding: 16px 24px;
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    @include breakpoint(tablet-m) {
+      width: 100%;
+    }
+  }
+}
